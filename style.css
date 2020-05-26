@@ -1,0 +1,113 @@
+
+/* Basic CSS Styles for Build a Hero */
+
+body{
+	background:#000;
+	color:white;
+	font-family: Arial, sans-serif;
+	font-size:1.25em;
+	line-height:1.75;
+}
+
+/* Layout */
+.wrapper{
+	max-width:100%;
+}
+.hero{
+	max-width:1110px;
+	margin:5em auto;
+	display:flex;
+	align-items: start;
+	justify-content: center;
+	padding: 0;
+}
+.hero-left{
+	width:60%;
+	margin-bottom:2em;
+}
+.hero-right{
+	width:40%;
+}
+@media screen and (max-width: 1200px){
+	.hero{
+		margin:5em;
+	}
+	.hero-left{
+		margin-right:1%;
+	}
+
+}
+@media screen and (max-width: 780px){
+	.hero{
+		display:block;
+		max-width:80%;
+	}
+	.hero-left, .hero-right{
+		width:95%;
+		margin-right:2%;
+	}
+}
+
+/* General Styles */
+h1, .buttonWrapper, p{
+	margin-left:1%;
+}
+h1{
+	font-size:2em;
+	line-height:1.5;
+	margin-bottom:1em;
+}
+p{
+	margin-bottom:1.5em;
+}
+.hero-desc{
+	position:relative;
+}
+.hero-desc::before {
+	background-color: #fff;
+	content: "";
+	height: 3px;
+	position: absolute;
+	width: 30px;
+	left: -60px;
+	top: 19px;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+.hero-right img{
+	box-shadow: 20px -20px 0 rgba(255, 255, 255, 0.2);
+	filter: saturate(30%);
+}
+
+/* Button Styles */
+a, a:link{
+	padding:10px 20px;
+	margin-right:10px;
+	display:inline-block;
+	transition: all ease-in-out 0.3s;
+	text-decoration:none;
+	margin-bottom:10px;
+}
+.btn-primary{
+	background:white;
+	color:#000;
+	border:1px solid white;
+}
+.btn-primary:hover, .btn-primary:active{
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+}
+.btn-secondary{
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+}
+.btn-secondary:hover, .btn-secondary:active{
+	background:white;
+	color:#000;
+	border:1px solid white;
+}
+
